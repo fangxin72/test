@@ -1,0 +1,11 @@
+﻿h1 {
+    background-color: black;
+    color: white;
+    width: 200px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+dl {
+    border-bottom: dashed;
+}
