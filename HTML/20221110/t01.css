@@ -1,0 +1,49 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.box{
+    width: 600px;
+    border: 1px solid #dbdbdb;
+    margin: 10px auto;
+}
+
+.box  .title{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.imgbox{
+    width: 210px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.imgbox img{
+    float: left;
+    padding: 3px;
+    border: 1px solid #dbdbdb;
+    margin-right: 15px;
+}
+
+.imgbox p{
+    color: #3f72b5;
+}
+
+.imgbox ul li{
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}

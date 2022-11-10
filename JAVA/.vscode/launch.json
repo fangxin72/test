@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch t1",
+      "request": "launch",
+      "mainClass": "t1",
+      "projectName": "JAVA_fa89650f"
+    },
+    {
+      "type": "java",
       "name": "Launch k04",
       "request": "launch",
       "mainClass": "k04",
