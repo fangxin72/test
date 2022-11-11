@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch efwds",
+      "request": "launch",
+      "mainClass": "efwds",
+      "projectName": "JAVA_fa89650f"
+    },
+    {
+      "type": "java",
+      "name": "Launch ertyui",
+      "request": "launch",
+      "mainClass": "ertyui",
+      "projectName": "JAVA_fa89650f"
+    },
+    {
+      "type": "java",
       "name": "Launch jl9",
       "request": "launch",
       "mainClass": "jl9",
