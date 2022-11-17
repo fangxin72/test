@@ -5,7 +5,7 @@
  *
  * @LastEditors: Fx
  *
- * @LastEditTime: 2022-11-14 14:00:31
+ * @LastEditTime: 2022-11-14 14:18:15
  *
  * @FilePath: \JAVA\day8\sdfgh.java
  *
@@ -29,6 +29,10 @@ public class sdfgh {
                     nums[j + 1] = temp;
                 }
             }
+        }
+        System.out.println("排序后的数组");
+        for (int num : nums) {
+            System.out.println(num);
         }
     }
 }
