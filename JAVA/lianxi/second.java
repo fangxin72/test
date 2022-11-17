@@ -3,7 +3,7 @@
  * @Author: Yilsi
  * @Date: 2022-11-17 16:09:16
  * @LastEditors: Fx
- * @LastEditTime: 2022-11-17 17:22:09
+ * @LastEditTime: 2022-11-17 19:19:26
  * @FilePath: \JAVA\lianxi\second.java
  * @Description: I don't know.
  * Cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet.
@@ -25,10 +25,10 @@ public class second {
             System.out.println("托运费为5元");
             // 大于20 公斤小于100 公斤的时,超出20 公斤的部分按每0.2 元每公斤计费
         } else if (weight >= 20 && weight <= 100) {
-            System.out.println("托运费为" + (weight - 20) * 0.2 + 5 + "元");
+            System.out.println("托运费为" + ((weight - 20) * 0.2 + 5) + "元");
             // 大于100 公斤的时候，超出100 公斤的部分按每0.15 元每公斤计费
         } else if (weight > 100) {
-            System.out.println("托运费为" + (weight - 100) * 0.15 + 5 + 16 + "元");
+            System.out.println("托运费为" + ((weight - 100) * 0.15 + 5 + 16) + "元");
         }
         input.close();
     }
