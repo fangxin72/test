@@ -6,6 +6,69 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Launch eighth",
+			"request": "launch",
+			"mainClass": "eighth",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
+			"name": "Launch third",
+			"request": "launch",
+			"mainClass": "third",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
+			"name": "Launch second",
+			"request": "launch",
+			"mainClass": "second",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
+			"name": "Launch seventh",
+			"request": "launch",
+			"mainClass": "seventh",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
+			"name": "Launch sixth",
+			"request": "launch",
+			"mainClass": "sixth",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
+			"name": "Launch fifth",
+			"request": "launch",
+			"mainClass": "fifth",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
+			"name": "Launch fourth",
+			"request": "launch",
+			"mainClass": "fourth",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
+			"name": "Launch first",
+			"request": "launch",
+			"mainClass": "first",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
+			"name": "Launch cvbh",
+			"request": "launch",
+			"mainClass": "cvbh",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
 			"name": "Launch IIIllIIllllI",
 			"request": "launch",
 			"mainClass": "IIIllIIllllI",
