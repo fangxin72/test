@@ -1,0 +1,80 @@
+﻿<!--
+ * @Author: Yilsi
+ * @Date: 2022-11-23 18:51:33
+ * @LastEditors: Fx
+ * @LastEditTime: 2022-11-24 10:15:29
+ * @FilePath: \HTML\20221123\fgbn.html
+ * @Description: I don't know.
+ * Cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet.
+ * Copyright (c) 2022 by Fx, All Rights Reserved.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.box {
+				border: 3px solid green;
+				width: 600px;
+				height: 600px;
+			}
+			.box div {
+				width: 200px;
+				height: 200px;
+			}
+			.one {
+				background-color: pink;
+				/*块元素默认宽度是100%*/
+				/*当元素设置了浮动属性以后
+                元素的宽度就不再是100%了
+                而是根据元素的内容来决定的*/
+				/*脱离文档流*/
+				/*浮动元素的宽度是根据内容来决定的*/
+				float: right;
+			}
+			.two {
+				background-color: plum;
+				float: right;
+			}
+			/*行内元素默认情况下是不可以设置宽高的*/
+			.box a {
+				background-color: red;
+				width: 200px;
+				height: 200px;
+			}
+			/*:hover表示给指定的元素添加鼠标悬停的效果*/
+			/*::after表示给指定的元素添加伪元素*/
+			.box::after {
+				content: ''; /*表示伪元素的内容*/
+				display: block; /*伪元素默认是行内元素，所以要设置成块元素*/
+				clear: both; /*清除浮动*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="one">DDDDD</div>
+			<div class="two"></div>
+			<a href="#">点击</a>
+
+			<div style="clear: both"></div>
+			<!--在所有浮动元素的最后添加一个空的div元素
+            并且给这个div元素设置clear属性
+            clear属性的值是left right both
+            left表示清除左边的浮动元素
+            right表示清除右边的浮动元素
+            both表示清除左右两边的浮动元素
+            clear属性的作用是清除浮动元素的影响
+            使得父元素的高度可以包含所有的子元素
+            从而避免父元素高度塌陷的问题-->
+		</div>
+		<!--解决父级边框高度塌陷的方法
+            1.给父级元素添加overflow属性
+            2.给父级元素添加伪元素
+            3.给父级元素添加一个空的div元素并且给这个div元素设置clear属性
+            4.给父级元素添加一个::after伪元素 给这个伪元素设置content属性和display属性-->
+	</body>
+</html>

@@ -6,6 +6,27 @@
 	"configurations": [
 		{
 			"type": "java",
+			"name": "Launch shss",
+			"request": "launch",
+			"mainClass": "shss",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
+			"name": "Launch rgh",
+			"request": "launch",
+			"mainClass": "rgh",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
+			"name": "Launch sdf",
+			"request": "launch",
+			"mainClass": "sdf",
+			"projectName": "JAVA_fa89650f"
+		},
+		{
+			"type": "java",
 			"name": "Launch eighth",
 			"request": "launch",
 			"mainClass": "eighth",

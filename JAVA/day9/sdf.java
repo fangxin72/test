@@ -3,7 +3,7 @@
  * @Author: Yilsi
  * @Date: 2022-11-17 14:44:13
  * @LastEditors: Fx
- * @LastEditTime: 2022-11-17 15:21:15
+ * @LastEditTime: 2022-11-21 14:49:03
  * @FilePath: \JAVA\day9\sdf.java
  * @Description: I don't know.
  * Cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet.
@@ -51,40 +51,49 @@ public class sdf {
             System.out.println("**********************************");
             System.out.println("请选择：");
             int choose = input.nextInt();
-
-            switch (choose) {
+            switch (choice) {
                 case 1:
                     System.out.println("1.我要订餐");
+                    for (int i = 0; i < dishNames.length; i++) {
+                        System.out.println((i + 1) + "." + dishNames[i] + " " + dishPrices[i] + "元");
+                    }
+                    System.out.println("请输入订餐人的姓名：");
+                    names[i] = input.next();
+                    System.out.println("序号\t菜名\t单价\t点赞数");
+                    for (int j = 0; j < dishNames.length; j++) {
+                        System.out.println((j + 1) + "." + dishNames[j] + "\t" + dishPrices[j] + "元");
+                    }
+                    System.out.println("请选择要点的菜品编号：");
+                    int no = input.nextInt();
+                    System.out.println("请选择要点的份数：");
+                    int count = input.nextInt();
+                    dishMegs[i] = dishNames[no - 1] + count + "份";
+                    double dishPrice = dishPrices[no - 1] * count;
+                    double deliPrice = dishPrice >= 50 ? 0.0 : 5.0;
+                    sumMoney[i] = dishPrice + deliPrice;
+                    System.out.println("送餐时间(送餐时间是10点到20点之间整点送餐)：");
+                    times[i] = input.nextInt();
+                    System.out.println("请输入送餐地址：");
+                    address[i] = input.next();
+                    states[i] = 1;
+                    System.out.println("订餐成功！您的订单为：");
+                    System.out.println();
                     break;
                 case 2:
-                    System.out.println("2.查看餐袋");
+                    System.out.println("查看餐袋");
+                    System.out.println("序号\t订餐人\t餐品信息\t送餐时间\t送餐地址\t总金额\t订单状态");
+                    for (int i = 0; i < names.length; i++) {
+                        if (names[i] != null) {
+                            String stateStr = states[i] == 0 ? "已完成" : "已预订;";
+                            System.out.println((i + 1) + "\t" + names[i] + "\t" + dishMegs[i] + "\t" + times[i] + "\t"
+                                    + address[i] + "\t" + sumMoney[i] + "\t" + states[i]);
+                        }
+                    }
                     break;
                 case 3:
-                    System.out.println("3.签收订单");
-                    break;
-                case 4:
-                    System.out.println("4.删除订单");
-                    break;
-                case 5:
-                    System.out.println("5.我要点赞");
-                    break;
-                case 6:
-                    System.out.println("退出系统");
-                    break;
-                    isExit = ture;
-                    break;
-                default:
-                    System.out.println("输入错误，请重新输入");
+                    System.out.println("签收订单");
                     break;
             }
-            if (!isExit) {
-                System.err.println("输入0返回上一级菜单");
-                num = input.nextInt();
-            } else {
-                break;
-            }
-            while (num == 0)
-                ;
         }
     }
 }
